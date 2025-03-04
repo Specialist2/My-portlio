@@ -1,0 +1,87 @@
+body {
+  background-color: white;
+}
+header {
+  background-color: rgb(113, 30, 30);
+  display: flex;
+  gap: 400px;
+  padding-left: 20px;
+  align-items: center;
+  color: white;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+.links {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+.profile {
+  margin: 20px 10px 20px 10px;
+  text-align: center;
+
+  padding-bottom: 60px;
+  margin-bottom: 0px;
+}
+.my-image {
+  /* padding: 20px 20px; */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: auto;
+  display: block;
+}
+.profile p1 {
+  line-height: 20px;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  span {
+    color: green;
+  }
+}
+
+.about {
+  margin-top: -50px;
+
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
+.cta {
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.cta:hover {
+  color: white;
+  background-color: green;
+  transform: scale(1.5);
+}
+.work {
+  background-color: rgb(113, 30, 30);
+  color: white;
+
+  /* object-fit: cover;
+  display: flex; */
+}
+.work h2 {
+  margin-left: 200px;
+  margin-top: 10px;
+  align-items: center;
+}
+.work img {
+  width: 300px;
+  height: 200px;
+  gap: 20px;
+  padding: 20px 20px;
+  border-radius: 30px;
+}
