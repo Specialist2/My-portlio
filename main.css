@@ -8,6 +8,7 @@ header {
   padding-left: 20px;
   align-items: center;
   color: white;
+  margin-bottom: -20px;
 }
 header a {
   color: white;
@@ -20,6 +21,8 @@ header a {
   justify-content: space-between;
 }
 .profile {
+  background: linear-gradient(to right, white, rgb(113, 30, 30), white);
+
   margin: 20px 10px 20px 10px;
   text-align: center;
 
@@ -39,11 +42,11 @@ header a {
 }
 .profile p1 {
   line-height: 20px;
-  color: black;
+  color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   span {
-    color: green;
+    color: white;
   }
 }
 
@@ -53,9 +56,12 @@ header a {
   text-align: center;
   padding-top: 0px;
   padding-bottom: 100px;
+  h1 {
+    color: white;
+  }
 }
 .cta {
-  background-color: brown;
+  background-color: rgb(113, 30, 30);
   color: white;
   padding: 10px 20px;
   border-radius: 30px;
@@ -66,22 +72,152 @@ header a {
   background-color: green;
   transform: scale(1.5);
 }
-.work {
+.sector {
+  flex-wrap: wrap;
+  display: flex;
+  object-fit: contain;
+  padding-bottom: 50px;
+  margin-top: 5px;
   background-color: rgb(113, 30, 30);
+  text-align: center;
+  padding-bottom: 50px;
   color: white;
-
-  /* object-fit: cover;
-  display: flex; */
+  p {
+    font-family: inherit;
+    font-weight: 200;
+    font-style: italic;
+  }
 }
-.work h2 {
-  margin-left: 200px;
-  margin-top: 10px;
-  align-items: center;
+.sector h2 {
+  /* flex: 1; */
+  color: white;
+  font-weight: bolder;
+  white-space: nowrap;
 }
-.work img {
-  width: 300px;
-  height: 200px;
+.sector img {
+  padding: 2px;
+  background: linear-gradient(to right, yellow, rgb(137, 21, 137));
+  border-radius: 20px;
+  :object-fit: cover;
   gap: 20px;
-  padding: 20px 20px;
+  width: 250px;
+  height: 200px;
+  cursor: pointer;
+}
+.sector img:hover {
+  transform: scale(1.2);
+}
+.health {
+  align-items: center;
+  flex: 1;
+  margin-left: 30px;
+  padding: 10px 20px;
+}
+.forex {
+  align-items: center;
+  flex: 1;
+  margin-left: 20px;
+}
+.container {
+  display: flex;
+  margin-top: -19px;
+  color: white;
+  padding-bottom: 100px;
+  background-color: rgb(113, 30, 30);
+}
+.my-work img {
+  margin-left: 20px;
+  width: 200px;
+  height: 150px;
   border-radius: 30px;
+}
+.my-work h3 {
+  margin-left: 20px;
+}
+.contact {
+  margin-left: 20px;
+  padding-bottom: 100px;
+  text-align: start;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.container h1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.container textarea {
+  border-radius: 30px;
+  width: 10px;
+  height: 5px;
+  padding: 10px;
+}
+.container button {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  background: linear-gradient(to right, yellow, rgb(243, 18, 228));
+}
+.container button:hover {
+  color: white;
+  background: linear-gradient(to right, green, red);
+  transform: scale(1.5);
+}
+.my-work img:hover {
+  transform: scale(1.1);
+}
+.type {
+  padding: 20px;
+  border-radius: 30px;
+}
+.footer {
+  background-color: rgb(113, 30, 30);
+  padding: 20px;
+}
+.footer img {
+  width: 30px;
+  height: 20px;
+
+  border-radius: 25px;
+}
+.footer p {
+  color: white;
+}
+@media (max-width: 400px) {
+  .sector {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 50px;
+    margin-top: 5px;
+    background-color: rgb(113, 30, 30);
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+    p {
+      font-family: inherit;
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
+  container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  header a {
+    display: none;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: wrap;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
