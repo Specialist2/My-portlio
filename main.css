@@ -188,7 +188,7 @@ header img {
 .footer p {
   color: white;
 }
-@media (max-width: 400px) {
+@media (max-width: 769px) {
   .sector {
     display: flex;
     flex-wrap: wrap;
